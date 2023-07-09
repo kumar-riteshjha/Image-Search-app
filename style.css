@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(84, 80, 80);
+    margin: 40px 0 60px 0;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+#Search-input{
+    width: 60%;
+    font-weight: 550;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+}
+#Search-btn{
+    padding: 10px 20px;
+    background-color: #138065;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.Search-results{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.Search-result{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+.Search-result img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.Search-result:hover img{
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out ;
+}
+.Search-result a{
+   font-size: 20px;
+   text-decoration: none;
+   color: #333;
+   padding: 10px;
+   text-transform: capitalize; 
+}
+.show-more-btn{
+    background-color: #008cba;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 30px auto;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    cursor:pointer;
+    display: none;
+}
+@media screen and (max-width:768px){
+    .Search-result{
+        padding: 20px;
+    }
+    .Search-result{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .Search-result{
+        padding: 20px;
+    }
+    .Search-result{
+        width: 100%;
+    }
+}
